@@ -1,0 +1,38 @@
+
+        [
+            {
+                "id": "high_temp_alert",
+                "condition": {
+                    "and": [
+                        {"key": "temperature", "operator": ">", "value": 30.0},
+                        {"key": "location", "operator": "==", "value": "LivingRoom"}
+                    ]
+                },
+                "actions": [
+                    {"type": "log", "message": "ALERT: High temperature ({temperature}C) detected in {location}!"},
+                    {"type": "http", "url": "http://localhost:8080/alerts", "method": "POST", "payload": {"alert_type": "high_temp", "temp": "{temperature}", "loc": "{location}"}}
+                ]
+            },
+            {
+                "id": "system_status_ok",
+                "condition": {
+                    "key": "status", "operator": "==", "value": "OK"
+                },
+                "actions": [
+                    {"type": "log", "message": "System status is OK. Source: {source}."}
+                ]
+            },
+            {
+                "id": "low_humidity_warning",
+                "condition": {
+                    "and": [
+                        {"key": "humidity", "operator": "<", "value": 40},
+                        {"not": {"key": "alert_sent", "operator": "==", "value": true}}
+                    ]
+                },
+                "actions": [
+                    {"type": "log", "message": "WARNING: Low humidity ({humidity}%) detected. Consider humidifying."}
+                ]
+            }
+        ]
+        

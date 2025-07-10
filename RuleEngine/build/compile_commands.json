@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/RuleEngine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/RuleEngine/build/_deps/json-src/include -g -std=gnu++17 -o app/CMakeFiles/repe.dir/main.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/RuleEngine/app/main.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/RuleEngine/app/main.cpp"
+}
+]

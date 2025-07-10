@@ -1,0 +1,77 @@
+[
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o CMakeFiles/repe_engine.dir/main.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/main.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/main.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o input_sources/CMakeFiles/input_sources_lib.dir/FileWatcher.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/FileWatcher.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/FileWatcher.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o input_sources/CMakeFiles/input_sources_lib.dir/SocketListener.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/SocketListener.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/SocketListener.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o input_sources/CMakeFiles/input_sources_lib.dir/RestApiEndpoint.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/RestApiEndpoint.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/RestApiEndpoint.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o input_sources/CMakeFiles/input_sources_lib.dir/TimerScheduler.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/TimerScheduler.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources/TimerScheduler.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o rules/CMakeFiles/rules_lib.dir/Rule.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/Rule.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/Rule.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o rules/CMakeFiles/rules_lib.dir/RuleParser.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/RuleParser.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/RuleParser.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o rules/CMakeFiles/rules_lib.dir/RuleManager.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/RuleManager.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/RuleManager.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o rules/CMakeFiles/rules_lib.dir/conditions/ValueCondition.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions/ValueCondition.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions/ValueCondition.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o rules/CMakeFiles/rules_lib.dir/conditions/LogicalConditions.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions/LogicalConditions.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions/LogicalConditions.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o actions/CMakeFiles/actions_lib.dir/LogAction.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/LogAction.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/LogAction.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o actions/CMakeFiles/actions_lib.dir/HttpAction.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/HttpAction.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/HttpAction.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o actions/CMakeFiles/actions_lib.dir/ShellCommandAction.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/ShellCommandAction.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/ShellCommandAction.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o actions/CMakeFiles/actions_lib.dir/ActionFactory.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/ActionFactory.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions/ActionFactory.cpp"
+},
+{
+  "directory": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+  "command": "/usr/bin/g++ -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/core -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/input_sources -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/rules/conditions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/actions -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/common/third_party -I/home/dev/workspaces/Cpp-Practice-Labs/repe_engine -g -std=c++17 -o action_dispatcher/CMakeFiles/action_dispatcher_lib.dir/ActionDispatcher.cpp.o -c /home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher/ActionDispatcher.cpp",
+  "file": "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/action_dispatcher/ActionDispatcher.cpp"
+}
+]

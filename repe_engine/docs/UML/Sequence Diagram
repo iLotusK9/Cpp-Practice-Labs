@@ -1,0 +1,39 @@
+sequenceDiagram
+    participant IS as InputSource
+    participant EP as EventProcessor
+    participant EQ as EventQueue
+    participant RE as RuleEngine
+    participant AD as ActionDispatcher
+    participant AF as ActionFactory
+    participant AC as ActionCommand
+
+    IS->>EP: Gửi dữ liệu thô (raw_data)
+    activate EP
+    EP->>EP: Chuẩn hóa dữ liệu thành Event
+    EP->>EQ: Đẩy Event vào hàng đợi
+    deactivate EP
+
+    loop Vòng lặp xử lý sự kiện
+        RE->>EQ: Lấy Event từ hàng đợi (pop())
+        activate RE
+        RE->>RE: Đánh giá Event với các Rule
+        alt Nếu Rule khớp
+            RE->>AD: Gửi cấu hình Action (actions_config) và Event
+            activate AD
+            loop Mỗi Action trong actions_config
+                AD->>AF: Yêu cầu tạo ActionCommand (action_config)
+                activate AF
+                AF->>AF: Xác định loại Action
+                AF-->>AD: Trả về unique_ptr<IActionCommand>
+                deactivate AF
+                AD->>AC: Gọi execute(Event) trên ActionCommand
+                activate AC
+                AC-->>AD: Hoàn thành Action
+                deactivate AC
+            end
+            AD-->>RE: Hoàn thành điều phối
+            deactivate AD
+        end
+        RE-->>EQ: Hoàn thành xử lý Event
+        deactivate RE
+    end

@@ -1,0 +1,21 @@
+# ninja log v5
+1	6432	1751805153248538566	input_sources/CMakeFiles/input_sources_lib.dir/SocketListener.cpp.o	e3a6a9d8a5326843
+3480	8054	1751805154878538704	rules/CMakeFiles/rules_lib.dir/RuleParser.cpp.o	249b4045e6450d34
+2269	2526	1751805301708534273	repe_engine	c1129504226b6c62
+0	5146	1751805151968538458	CMakeFiles/repe_engine.dir/main.cpp.o	7b6e3f03fb3265d
+6432	8993	1751805155818538783	actions/CMakeFiles/actions_lib.dir/LogAction.cpp.o	4eb934e0a4171d0d
+6601	6884	1751805153708538605	input_sources/libinput_sources_lib.a	38c72dd78a1e0d53
+2226	2269	1751805301458534267	action_dispatcher/libaction_dispatcher_lib.a	a9d91ec0f5a4ca36
+2	2226	1751805301408534265	action_dispatcher/CMakeFiles/action_dispatcher_lib.dir/ActionDispatcher.cpp.o	f6ec57a0a4e3b7a0
+2	2196	1751805284288532947	actions/CMakeFiles/actions_lib.dir/ActionFactory.cpp.o	6ae43ab3877ec80c
+6336	7705	1751805154528538674	rules/CMakeFiles/rules_lib.dir/conditions/LogicalConditions.cpp.o	2ec9210a7a178481
+2	72	1751805299258534147	rules/librules_lib.a	bb8178018ae5a8b3
+5146	6572	1751805153398538579	rules/CMakeFiles/rules_lib.dir/conditions/ValueCondition.cpp.o	b9778a4e8d2f01dd
+2	3320	1751805285408532977	rules/CMakeFiles/rules_lib.dir/RuleManager.cpp.o	d5d16ff63aee5b30
+1	3480	1751805150298538317	rules/CMakeFiles/rules_lib.dir/Rule.cpp.o	1b64583c40fed97c
+0	6601	1751805153418538581	input_sources/CMakeFiles/input_sources_lib.dir/FileWatcher.cpp.o	63b371916fa85c44
+6572	9870	1751805156688538857	actions/CMakeFiles/actions_lib.dir/HttpAction.cpp.o	ebfebd0e23a3cab9
+1	4087	1751805150908538369	input_sources/CMakeFiles/input_sources_lib.dir/TimerScheduler.cpp.o	a229b0cde1b70b4d
+6884	9139	1751805155958538795	actions/CMakeFiles/actions_lib.dir/ShellCommandAction.cpp.o	8174af142c8f2e87
+1	6336	1751805153148538558	input_sources/CMakeFiles/input_sources_lib.dir/RestApiEndpoint.cpp.o	e8fde4b3d5be342b
+2	49	1751805299228534145	actions/libactions_lib.a	d1ddf1ca45ff5d43

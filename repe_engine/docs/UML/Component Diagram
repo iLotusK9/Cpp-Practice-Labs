@@ -1,0 +1,31 @@
+graph TD
+    subgraph Input Layer
+        InputSources[Các nguồn đầu vào::File, Socket, REST, Timer] --> EventProcessor(Bộ xử lý sự kiện);
+    end
+
+    subgraph Core REPE
+        EventProcessor --> EventQueue[Hàng đợi sự kiện];
+        EventQueue --> RuleEngine(Bộ xử lý quy tắc);
+        RuleEngine --> ActionDispatcher(Bộ điều phối hành động);
+    end
+
+    subgraph Rule Management
+        RuleConfigManager[Quản lý cấu hình quy tắc] --> RuleEngine;
+    end
+
+    subgraph Action Execution Layer
+        ActionDispatcher --> ActionFactory(Factory hành động);
+        ActionFactory --> ActionCommands[Các lệnh hành động::Log, HTTP, Shell, Callback];
+    end
+
+    ActionCommands --> ExternalServices[Các dịch vụ bên ngoài::Hệ thống Log, API, OS];
+
+    style InputSources fill:#f9f,stroke:#333,stroke-width:2px;
+    style EventProcessor fill:#ADD8E6,stroke:#333,stroke-width:2px;
+    style EventQueue fill:#90EE90,stroke:#333,stroke-width:2px;
+    style RuleEngine fill:#ADD8E6,stroke:#333,stroke-width:2px;
+    style ActionDispatcher fill:#ADD8E6,stroke:#333,stroke-width:2px;
+    style RuleConfigManager fill:#f9f,stroke:#333,stroke-width:2px;
+    style ActionFactory fill:#ADD8E6,stroke:#333,stroke-width:2px;
+    style ActionCommands fill:#f9f,stroke:#333,stroke-width:2px;
+    style ExternalServices fill:#f9f,stroke:#333,stroke-width:2px;

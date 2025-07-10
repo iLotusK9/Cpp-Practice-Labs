@@ -1,0 +1,164 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-fb396dd1152815dccba1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "input_sources",
+					"jsonFile" : "directory-input_sources-Debug-fc4465c88c80dead07cf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "input_sources",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "rules",
+					"jsonFile" : "directory-rules-Debug-449e8c994edafb2daf56.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "rules",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "actions",
+					"jsonFile" : "directory-actions-Debug-0e3c62064f52a0ccd791.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "actions",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "action_dispatcher",
+					"jsonFile" : "directory-action_dispatcher-Debug-159e4e2d347ea9a20f31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "action_dispatcher",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "REPE_Engine",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "action_dispatcher_lib::@f486e990ac4f77b513cd",
+					"jsonFile" : "target-action_dispatcher_lib-Debug-b5ac7e46d1f18aba68db.json",
+					"name" : "action_dispatcher_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "actions_lib::@051dcf22948e5c16ecae",
+					"jsonFile" : "target-actions_lib-Debug-ba17a0c8b41d2a38c295.json",
+					"name" : "actions_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "input_sources_lib::@0f058039a2df73ba4242",
+					"jsonFile" : "target-input_sources_lib-Debug-14e9226d737570267c34.json",
+					"name" : "input_sources_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "repe_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-repe_engine-Debug-e95cf4f9cf767f9b8df6.json",
+					"name" : "repe_engine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rules_lib::@e9b97fda50e8d1e46900",
+					"jsonFile" : "target-rules_lib-Debug-8c97e3137b1885080dc3.json",
+					"name" : "rules_lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine/build",
+		"source" : "/home/dev/workspaces/Cpp-Practice-Labs/repe_engine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

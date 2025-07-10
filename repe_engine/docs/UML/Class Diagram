@@ -1,0 +1,180 @@
+classDiagram
+    direction LR
+
+    class Event {
+        +string id
+        +string type
+        +string source
+        +chrono::time_point timestamp
+        +map~string,EventValue~ data
+        +string toString()
+    }
+    EventValue <|-- int
+    EventValue <|-- double
+    EventValue <|-- bool
+    EventValue <|-- string
+
+    class EventQueue {
+        -queue~Event~ queue_
+        -mutex mutex_
+        -condition_variable condition_
+        +push(Event)
+        +pop(): Event
+        +tryPop(): optional~Event~
+        +isEmpty(): bool
+    }
+
+    class EventProcessor {
+        -EventQueue& event_queue_
+        +EventProcessor(EventQueue&)
+        +processRawData(string_view,string_view,T)
+        +processRawJsonData(string_view,string_view)
+        +processStructuredData(string_view,string_view,T)
+    }
+
+    class IInputStrategy {
+        <<interface>>
+        +start(EventProcessor&)
+        +stop()
+    }
+
+    class FileWatcher {
+        +FileWatcher(string,string)
+        +start(EventProcessor&)
+        +stop()
+    }
+    IInputStrategy <|-- FileWatcher
+
+    class SocketListener {
+        +SocketListener(int)
+        +start(EventProcessor&)
+        +stop()
+    }
+    IInputStrategy <|-- SocketListener
+
+    class RestApiEndpoint {
+        +RestApiEndpoint(int)
+        +start(EventProcessor&)
+        +stop()
+    }
+    IInputStrategy <|-- RestApiEndpoint
+
+    class TimerScheduler {
+        +TimerScheduler(chrono::duration)
+        +start(EventProcessor&)
+        +stop()
+    }
+    IInputStrategy <|-- TimerScheduler
+
+    EventProcessor "1" -- "1" EventQueue : uses >
+    IInputStrategy "1" -- "1" EventProcessor : sends data to >
+
+    class ICondition {
+        <<interface>>
+        +evaluate(Event): bool
+    }
+
+    class ValueCondition {
+        -string_view key_
+        -string_view op_
+        -EventValue value_
+        +ValueCondition(string_view,string_view,EventValue)
+        +evaluate(Event): bool
+    }
+    ICondition <|-- ValueCondition
+
+    class AndCondition {
+        -vector~unique_ptr~ICondition~~ conditions_
+        +addCondition(unique_ptr~ICondition~)
+        +evaluate(Event): bool
+    }
+    ICondition <|-- AndCondition
+    AndCondition "1" *-- "*" ICondition : contains
+
+    class OrCondition {
+        -vector~unique_ptr~ICondition~~ conditions_
+        +addCondition(unique_ptr~ICondition~)
+        +evaluate(Event): bool
+    }
+    ICondition <|-- OrCondition
+    OrCondition "1" *-- "*" ICondition : contains
+
+    class NotCondition {
+        -unique_ptr~ICondition~ condition_
+        +NotCondition(unique_ptr~ICondition~)
+        +evaluate(Event): bool
+    }
+    ICondition <|-- NotCondition
+    NotCondition "1" *-- "1" ICondition : contains
+
+    class Rule {
+        +string id_
+        +unique_ptr~ICondition~ condition_root_
+        +vector~nlohmann::json~ actions_config_
+        +Rule(string,unique_ptr~ICondition~,vector~nlohmann::json~)
+        +check(Event): bool
+        +getActionsConfig(): vector~nlohmann::json~
+    }
+
+    class RuleParser {
+        +parse(nlohmann::json): unique_ptr~Rule~
+        -parseCondition(nlohmann::json): unique_ptr~ICondition~
+    }
+
+    class RuleManager {
+        <<Singleton>>
+        -vector~Rule~ rules_
+        -RuleManager()
+        +getInstance(): RuleManager&
+        +loadRules(string)
+        +evaluate(Event): vector~nlohmann::json~
+    }
+    RuleManager "1" -- "1" RuleParser : uses >
+    RuleManager "1" *-- "*" Rule : manages
+
+    EventQueue "1" -- "1" RuleEngine : consumes >
+    RuleEngine "1" -- "1" RuleManager : uses >
+    RuleEngine "1" -- "1" ActionDispatcher : triggers >
+
+    class IActionCommand {
+        <<interface>>
+        +execute(Event): void
+    }
+
+    class LogAction {
+        -string message_template_
+        +LogAction(nlohmann::json)
+        +execute(Event): void
+    }
+    IActionCommand <|-- LogAction
+
+    class HttpAction {
+        -string url_
+        -string method_
+        -nlohmann::json payload_template_
+        +HttpAction(nlohmann::json)
+        +execute(Event): void
+    }
+    IActionCommand <|-- HttpAction
+
+    class ShellCommandAction {
+        -string command_template_
+        +ShellCommandAction(nlohmann::json)
+        +execute(Event): void
+    }
+    IActionCommand <|-- ShellCommandAction
+
+    class ActionFactory {
+        +createAction(nlohmann::json): unique_ptr~IActionCommand~
+        +registerAction(string,ActionCreator)
+        -map~string,ActionCreator~ creators_
+    }
+
+    class ActionDispatcher {
+        -ThreadPool action_thread_pool_
+        +ActionDispatcher(size_t)
+        +dispatch(vector~nlohmann::json~,Event)
+    }
+    ActionDispatcher "1" -- "1" ActionFactory : uses >
+    ActionFactory "1" -- "0..*" IActionCommand : creates >
+    ActionDispatcher "1" -- "0..*" IActionCommand : executes >

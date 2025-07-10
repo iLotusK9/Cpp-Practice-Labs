@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/repe.dir/main.cpp.o -o repe  -lspdlog -lfmt 
