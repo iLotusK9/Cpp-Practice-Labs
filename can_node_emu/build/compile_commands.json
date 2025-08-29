@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/phuongnguyen/workspace/Cpp-Practice-Labs/can_node_emu/build",
+  "command": "/usr/bin/g++ -I/home/phuongnguyen/workspace/Cpp-Practice-Labs/can_node_emu/common -I/home/phuongnguyen/workspace/Cpp-Practice-Labs/can_node_emu/core -I/home/phuongnguyen/workspace/Cpp-Practice-Labs/can_node_emu/common/third_party -g -std=c++17 -o CMakeFiles/can_node_emu.dir/main.cpp.o -c /home/phuongnguyen/workspace/Cpp-Practice-Labs/can_node_emu/main.cpp",
+  "file": "/home/phuongnguyen/workspace/Cpp-Practice-Labs/can_node_emu/main.cpp"
+}
+]

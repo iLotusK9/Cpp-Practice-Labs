@@ -1,0 +1,5 @@
+
+struct CanFrame {
+    int id;
+
+};
