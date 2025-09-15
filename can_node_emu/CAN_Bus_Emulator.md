@@ -273,7 +273,8 @@ It’s fully testable in a simulated environment, making it hardware-free yet re
 
 
 
-cpp#ifndef CAN_INTERFACE_H
+cpp
+#ifndef CAN_INTERFACE_H
 #define CAN_INTERFACE_H
 
 #include <cstdint>
