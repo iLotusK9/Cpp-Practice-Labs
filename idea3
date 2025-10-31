@@ -1,0 +1,57 @@
+1. Modular IoT Sensor Gateway
+Concept
+
+A sensor hub application that collects data from multiple virtual or real sensors (e.g., temperature, humidity, motion), processes it locally, and sends it to a remote server or MQTT broker.
+
+Why it’s great
+
+Real-world embedded relevance.
+
+Rich design-pattern use.
+
+Demonstrates modular and template-based design.
+
+Tech & Patterns
+
+C++17: std::variant, std::optional, structured bindings, filesystem API.
+
+Design Patterns:
+
+Observer – sensors publish updates to subscribers (e.g., a logger or network client).
+
+Strategy – different communication protocols (MQTT, HTTP, file log).
+
+Factory Method – for creating sensor objects dynamically.
+
+Environment: Embedded Linux (e.g., Raspberry Pi) or Ubuntu PC.
+
+🧠 2. Multithreaded Job Scheduler / Task Executor
+Concept
+
+A lightweight task scheduling library that uses thread pools and template-based jobs for parallel processing.
+
+Features
+
+Submit any callable (lambda, function, functor).
+
+Generic template-based task wrapping.
+
+Task dependencies (e.g., via std::future).
+
+Optional real-time constraints (for Embedded Linux).
+
+Tech & Patterns
+
+C++17: std::thread, std::async, std::future, if constexpr.
+
+Design Patterns:
+
+Command – each job encapsulates an action.
+
+Singleton – global scheduler instance.
+
+Builder – to configure scheduler properties (threads, affinity).
+
+Environment: Ubuntu PC or Embedded Linux.
+
+
